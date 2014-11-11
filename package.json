@@ -1,0 +1,35 @@
+{
+  "name": "vanwilder",
+  "version": "0.0.1",
+  "description": "Start the party",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "npm run bundle",
+    "bundle": "webpack --optimize-minimize --optimize-occurence-order",
+    "watch": "webpack --progress --colors --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whatupdave/vanwilder"
+  },
+  "author": "Dave Newman <dave@snappyco.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whatupdave/vanwilder/issues"
+  },
+  "homepage": "https://github.com/whatupdave/vanwilder",
+  "dependencies": {
+    "basscss": "^4.1.4",
+    "css-loader": "^0.9.0",
+    "jsx-loader": "^0.12.1",
+    "react": "^0.12.0",
+    "react-router": "^0.10.2",
+    "style-loader": "^0.8.2",
+    "superagent": "^0.20.0",
+    "webpack": "^1.4.13"
+  }
+}
